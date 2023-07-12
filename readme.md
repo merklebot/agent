@@ -25,8 +25,8 @@ curl -X 'POST' \
   -d '{}'
 ```
 
-- Obtain token with POST request to `{TENANT_NAME}.storage.api2.merklebot.com/tokens/` endpoint.
-Specify ownerId and expiry:
+- Obtain a token with a POST request to `{TENANT_NAME}.storage.api2.merklebot.com/tokens/` endpoint.
+Specify `ownerId` and `expiry`:
 
 ```bash
 curl -X 'POST' \
@@ -40,18 +40,21 @@ curl -X 'POST' \
 }'
 ```
 
-All the previous steps could be done in interactive documentation at `{TENANT_NAME}.storage.api2.merklebot.com/docs`
+All the previous steps can be performed interactively using the documentation at `{TENANT_NAME}.storage.api2.merklebot.com/docs`
 
-From now on you need to use USER TOKEN instead of TENANT TOKEN.
+From now on, you need to use the **USER TOKEN** instead of the **TENANT TOKEN**.
 
 
 2. #### Insert you credentials in script
 
 Insert `USER_KEY`, `TENANT_NAME` and `FOLDER_PATH` to start uploading files to MerkleBot's Storage in `easy_upload.py` script
 
+3. #### Run the script
+Run `easy_upload.py`, it will upload all the files from `FOLDER_PATH` directory, as they will appear. 
+
 ---
-# Check, Upload and Download files to Storage
-With a `USER_KEY` you can work with files in storage.
+# Check, Upload and Download files
+With a USER_KEY, you can work with files in storage.
 
 - Enlist uploaded files:
 
